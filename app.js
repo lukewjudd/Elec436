@@ -39,18 +39,40 @@ app.get('/', function(req, res){
   });
 });
 
-app.get('/about', function(req, res){
-  res.render('about', {
-    title: 'About'
+app.get('/introduction', function(req, res){
+  res.render('introduction', {
+    title: 'Introduction'
   });
 });
 
-app.get('/contact', function(req, res){
-  res.render('contact', {
-    title: 'Contact'
+app.get('/disaster', function(req, res){
+  res.render('disaster', {
+    title: 'Software Disaster'
   });
 });
 
+app.get('/webapp', function(req, res){
+  res.render('webapp', {
+    title: 'Web App'
+  });
+});
+app.get('/databases', function(req, res){
+  res.render('databases', {
+    title: 'Databases'
+  });
+});
+
+app.get('/os', function(req, res){
+  res.render('os', {
+    title: 'Operating Systems'
+  });
+});
+
+app.get('/news', function(req, res){
+  res.render('news', {
+    title: 'News'
+  });
+});
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });
