@@ -1,0 +1,28 @@
+extends layout
+ 
+block content
+  h1 Operating Systems
+  section.css-table
+    section.two-column
+      section.cell
+        h2 Summary
+          p At one point in my degree, I had a couple of option units to choose from, Operating systems being one of them. I didnt choose to do this unit leaving another knowledge gap. Interestingly, ever other student in ELEC436 made the same choice, and hadnt done an operating systems course. This meant that again, it would be run lecture style to the entire class. The way this ran was identical to the database lectures . Receive the barebones necessary information to have a grasp on the key concepts of a topic you should know about to be competent as a software engineer.
+         p The main topics covered in regards to OS were
+           ul
+             li The role of the OS
+             li Deadlock
+             li Exponential Back Off
+             li Time waits
+             li Timeout
+             li Race conditions
+             li Interrupts
+             li The stack
+             li Buffer overflow
+             li Local variables and return 
+             li Semaphores
+             li Mutexes
+             li Critical regionsaddress
+             li Round robin scheduling
+             li process table
+             li process communication
+         p As you can see this is a HUGE list of topics that would take no shorter than an entire course to encompass completely. If I were to include the detail we went into on all of these topics they would honestly be wiki type definitions of each of the topics. With that in mind I think it is sufficient to list each of these topics and state that this is indeed what was very briefly covered.

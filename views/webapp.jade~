@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1  Introduction
+  section.css-table
+    section.one-column
+      section.cell
+        h2 Summary
+          p After looking at the software engineering competencies and the overarching goal of ELEC436, I selected the startup engineering course run by Stanford uni . The details of the course can be found at:
+(a href='https://www.coursera.org/course/startup') Startup
+          p The definition of the course itself was - Learn the engineering skills needed to build a technology startup from the ground up. 
+          p There were a few key reasons I selected this as something I should know and be spending time on while at university. The key topics and reasons for this choice were
+            ul
+              li Web Development
+              li Linux environment development
+              li Frontend/Backend development
+              li Production environment
+              li Development scaling
+              li Business scaling
+              li Latest technology implementation
+              li Project/resource management skills
+          p The goals and competencies required for this course were greatly applicable to ACS-s software engineering competencies. On a personal level, I do not feel like my ENGG411 thesis was a project I could be proud of, so completing a project like this covered many large project skills I feel I missed out on. It also encompasses something I am passionate about and uses the latest technologies available in web development, which seems like a fitting project considering it is intended as a transition from a university type class into a professional workplace environment.
+  

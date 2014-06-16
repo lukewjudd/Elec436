@@ -1,0 +1,43 @@
+extends layout
+ 
+block content
+  h1 Operating Systems
+  section.css-table
+    section.two-column
+      section.cell
+        h2 Summary
+          p At one point in my degree, I had a couple of option units to choose from, Operating systems being one of them. I didnt choose to do this unit leaving another knowledge gap. Interestingly, ever other student in ELEC436 made the same choice, and hadnt done an operating systems course. This meant that again, it would be run lecture style to the entire class. The way this ran was identical to the database lectures . Receive the barebones necessary information to have a grasp on the key concepts of a topic you should know about to be competent as a software engineer.
+         p The main topics covered in regards to OS were
+           ul
+             li The role of the OS
+             li Deadlock
+             li Exponential Back Off
+             li Time waits
+             li Timeout
+             li Race conditions
+             li Interrupts
+             li The stack
+             li Buffer overflow
+             li Local variables and return 
+             li Semaphores
+             li Mutexes
+             li Critical regionsaddress
+             li Round robin scheduling
+             li process table
+             li process communication
+         p As you can see this is a HUGE list of topics that would take no shorter than an entire course to encompass completely. If I were to include the detail we went into on all of these topics they would honestly be wiki type definitions of each of the topics. With that in mind I think it is sufficient to list each of these topics and state that this is indeed what was very briefly covered.
+      section.cell
+        h2 Details
+          p The role of the OS was clearly defined as the interface between the hardware and software that provides a common service for application software. Its key roles being hardware management, hiding complexities form the user and to create efficiency. 
+          p Buffer overflows were a focal point of the practical implementation of the ideas we covered in class. The goal of our mini-project was to create a  buffer overflow by playing around with a simple C program 
+          p img(src='http://i.imgur.com/ffPRfKJ.png')
+          p img(src='http://i.imgur.com/wX4lD0c.png')
+          p The idea behind this particular overflow was to punish the poor implementation of strcpy in C. This function doesnt have a bound size limit, so even though the array of characters is only given a size of 10, we can place more characters in this to overwrite the stack causing a buffer overflow.
+          p You can clearly see that the function Nevercalled is never called within the main function but after I have given it the right input, which includes the return address of that function itself, I am able to make the program do something it shouldnt be doing.
+          p You may notice that I used a perl script, simply to make the call of the hexadecimal return address much simpler.
+          p This was coded on a linux machine and the call fno stack protector is necessary to prevent linux from stopping you from smashing the stack
+          p  Not only was there linux protection to overcome, but gcc itself implements canaries within its compilation, these are dummy address calls which make it harder to cause a buffer overflow but clearly not impossible, it is simply a matter of finding where these canaries are, writing in their value and placing your return address where you want it. 
+      section.cell
+        h2 Reflection
+          p The summation of OS core topics is another example of receiving the bare necessities and given us the path to research topics into depth that show your competence as a software engineer. It was a really quick intro to operating systems with a lot of topics covered in a short space of time. Regardless I will finish ELEC4365 with more knowledge about Operating Systems than I had before entering, achieving the overall goal of the class and fulfilling a knowledge gap I previously had.
+          p Another important issue regarding buffer overflows is a reminder that as a programmer, there are external forces that act outside of your program that could cause it to act in unpredictable ways and its up to you as a software engineer to know that these exist and how you can prevent them.
